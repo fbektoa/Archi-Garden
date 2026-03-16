@@ -1,0 +1,1224 @@
+@charset "utf-8";
+:root {
+  --border-1: 1px solid #606676;
+  --border-2: 1px solid #fff;
+  --background-1: #606676;
+  --background-2: #fff;
+  --background-hover-1: #606676;
+  --background-hover-2: #fff;
+  /* 간격 */
+  --space-gap: 10px;
+  --space-padding-x-s: 7px;
+  --space-padding-x-m: 10px;
+  --space-padding-x-l: 13px;
+  --space-padding-y-s: 14px;
+  --space-padding-y-m: 17px;
+  --space-padding-y-l: 20px;
+  /* 코너 */
+  --radius-s: 10px;
+  --radius-m: 30px;
+  /* 글자 */
+  --font-size-s: 11px;
+  --font-size-m: 13px;
+  --font-size-l: 16px;
+}
+/* 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  color: #333;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+img {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+/* 유리재질 */
+.glass-card {
+  /* 배경색: 두명도 있는 흰색이나 검은색 얇게 깔기 */
+  background: rgba(255, 255, 255, 0.1);
+  /* 뒷 배경 흐림 (핵심) */
+  backdrop-filter: blur(10px);
+  /* 사파리 브라우저 대응 */
+  -webkit-backdrop-filter: blur(10px);
+  /* 테두리: 아주 얇은 선을 주어 고급스러움 더함 */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  /* 그림자 */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+/* 버튼 */
+.border-btn {
+  display: flex;
+  border: var(--border-1);
+  font-size: var(--font-size-s);
+  gap: var(--space-gap);
+  padding: var(--space-padding-x-s) var(--space-padding-y-s);
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+}
+.border-btn:hover {
+  background: var(--background-hover-1);
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.border-btn-w {
+  display: flex;
+  border: var(--border-2);
+  font-size: var(--font-size-s);
+  gap: var(--space-gap);
+  padding: var(--space-padding-x-s) var(--space-padding-y-s);
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+  color: #fff;
+}
+.border-btn-w:hover {
+  background: var(--background-hover-2);
+  color: #333;
+  transition: all 0.5s ease-in-out;
+}
+.text-btn {
+  display: flex;
+  font-size: var(--font-size-s);
+  gap: var(--space-gap);
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+}
+.text-btn:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.text-btn-w {
+  display: flex;
+  color: #fff;
+  font-size: var(--font-size-m);
+  gap: var(--space-gap);
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+}
+.text-btn-w:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+/* 모바일 */
+.header-left {
+  background: var(--background-1);
+  padding: 30px;
+}
+.h-l-box {
+  display: flex;
+}
+.header-logo {
+  margin-left: 90px;
+}
+.header-text1 {
+  margin-top: 50px;
+}
+.h-t1-1 {
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.h-t1-box {
+  margin-bottom: 30px;
+  position: relative;
+}
+.h-t1-box p:first-child {
+  color: #333;
+  filter: blur(1.5px);
+  font-size: 30px;
+  position: absolute;
+  left: -15px;
+  top: -15px;
+}
+.h-t1-box p:first-child strong {
+  color: #333;
+  filter: blur(1px);
+  font-size: 40px;
+}
+.h-t1-box p:last-child {
+  color: #fff;
+  font-size: 30px;
+  position: relative;
+  z-index: 2;
+}
+.h-t1-box p:last-child strong {
+  color: #fff;
+  font-size: 40px;
+}
+.h-t2-1 {
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.h-slide {
+  position: relative;
+  width: 100%;
+  height: 388px;
+}
+.h-slide li {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.h-slide li a img {
+  width: 100%;
+  max-width: 100%;
+}
+.header-menu {
+  display: none;
+}
+.sec1-left {
+  margin: 100px 0 20px 0;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+.sec1-left img {
+  width: 40%;
+  max-width: 100%;
+}
+.s1-l-text{
+  position: relative;
+  z-index: 2;
+}
+.s1-l-t-box {
+  position: relative;
+  z-index: 3;
+  margin: 50px 0 30px;
+  left: -50px;
+}
+.s1-l-t-box h2:first-child {
+  color: #999;
+  filter: blur(3px);
+  font-size: 64px;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  z-index: -1;
+  font-weight: normal;
+}
+.s1-l-t-box h2:last-child {
+  font-size: 64px;
+  font-weight: normal;
+}
+.s1-l-text p {
+  padding: 0 30px 0 13px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+.sec1-right {
+  margin-bottom: 100px;
+  padding: 0 30px 0 8px;
+  float: right;
+  width: 295px;
+  margin-top: -70px;
+}
+.sec1-right p {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.sec1-right img {
+  width: 100%;
+  max-width: 100%;
+}
+.sec2 {
+  clear: both;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0 25px;
+  margin-bottom: 100px;
+}
+.sec2-right {
+  padding: 0 5px;
+}
+.sec2-right h2 {
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.sec2-right p {
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+.s2-l-menu {
+  display: flex;
+}
+.s2-l-menu li:last-child {
+  display: none;
+}
+.s2-l-menu li a {
+  padding: 5px;
+}
+.s2-l-menu img {
+  width: 100%;
+  max-width: 100%;
+}
+.s2-l-m-t1 {
+  font-size: 15px;
+  font-weight: bold;
+}
+.s2-l-m-t2 {
+  font-size: 13px;
+}
+.s2-l-menu li a:hover p {
+  text-decoration: underline;
+}
+/* 1. 모바일 (기본 스타일: 1024px 미만) */
+.sec3 {
+  display: flex;
+  flex-direction: column; /* 세로로 쌓기 */
+  gap: 50px; /* 섹션 간의 넉넉한 간격 */
+}
+
+/* [순서 제어] */
+.sec3-left {
+  order: 1;
+  text-align: center;
+  padding: 0 30px;
+} /* 타이틀 중앙 */
+.sec3-left h2 {
+  font-size: 64px;
+  margin-bottom: 30px;
+}
+.sec3-left > p {
+  font-size: 13px;
+}
+.sec3-right {
+  order: 2;
+} /* 공중 정원 중간 */
+.sec3-midle {
+  order: 3;
+} /* 테라스 가든 하단 */
+
+/* [공중 정원 스타일] */
+.sec3-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 80px;
+}
+.sec3-right img {
+  width: 100%;
+  height: auto;
+}
+.s3-r-t-1 {
+  text-align: left;
+}
+.s3-r-t1-1 {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.s3-r-t1-2 {
+  font-size: 11px;
+  margin-bottom: 20px;
+  padding-right: 30px;
+}
+.s3-r-t-2 {
+  float: right;
+  margin-right: 30px;
+}
+/* [테라스 가든 스타일] */
+.sec3-midle {
+  display: flex;
+  flex-direction: row; /* 이미지와 텍스트 가로 배치 */
+  flex-wrap: wrap; /* 좁아지면 아래로 떨어지게 */
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 100px;
+}
+.sec3-midle img {
+  width: 40%; /* 이미지 비중 조절 */
+  height: auto;
+}
+.s3-m-tbox {
+  width: 40%; /* 텍스트 비중 조절 */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 154px;
+}
+.tbox-1 {
+  font-weight: bold;
+  font-size: 13px;
+}
+.tbox-2 {
+  font-size: 11px;
+}
+/* 섹션 4 레이아웃 */
+.sec4 {
+  position: relative; /* glass-card 배치의 기준점 */
+  width: 100%;
+  overflow: hidden;
+}
+
+.sec4-bg img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.6s ease; /* 호버 시 부드러운 확대 */
+}
+
+/* 유리 질감 카드 (기본 설정된 .glass-card 클래스 활용) */
+.sec4-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 정중앙 배치 */
+  width: 50%; /* 시안에 맞춰 너비 조절 */
+  height: 50%;
+  justify-content: space-around;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-gap);
+  /* 애니메이션 초기 상태 */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+/* 호버 시 동작 */
+.sec4:hover .sec4-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sec4:hover .sec4-bg img {
+  transform: scale(1.1); /* 배경 이미지 살짝 확대 */
+}
+
+/* 카드 내부 글자 스타일 */
+.sec4-text h3 {
+  color: #fff; /* 배경이 어두울 때 대비 */
+  font-size: 20px;
+  font-weight: normal;
+  /* 처음에 물어보셨던 그림자 효과! */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.sec5 {
+  padding: 0 25px;
+  margin-top: 100px;
+}
+.sec5-left {
+  padding: 0 5px;
+}
+.s5-l-box {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.s5-l-box h3:first-child {
+  font-size: 64px;
+  font-weight: normal;
+  color: #999;
+  filter: blur(2px);
+  position: absolute;
+  z-index: -1;
+  top: -10px;
+  left: 40px;
+}
+.s5-l-box h3:last-child {
+  font-size: 64px;
+  font-weight: normal;
+}
+.s5-l-t1 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.s5-l-t2 {
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+.s5-l-t3 {
+  margin-bottom: 30px;
+}
+.sec5-right ul {
+  display: flex;
+  margin-bottom: 15px;
+}
+.sec5-right ul li:last-child {
+  display: none;
+}
+.sec5-right ul li {
+  padding: 0 5px;
+}
+.sec5-right ul li a img {
+  width: 100%;
+  max-width: 100%;
+}
+.s5-r-text {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 100px;
+  padding: 0 5px;
+}
+.sec6-left {
+  display: flex;
+}
+.sec6-left img {
+  width: 40%;
+  max-width: 100%;
+}
+.s6-l-text {
+  padding: 80px 30px 0 15px;
+}
+.s6-l-text h4 {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+.s6-l-text p {
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+.sec6-right {
+  margin-bottom: 100px;
+  padding: 0 30px 0 0;
+  width: 70%;
+  float: right;
+  margin-top: 30px;
+}
+.sec6-right img {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+.sec6-right p {
+  font-size: 13px;
+  padding-right: 50px;
+  margin-bottom: 30px;
+}
+
+/* 섹션 레이아웃: Grid 활용 */
+.sec7 {
+  clear: both;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2열 구조 */
+  gap: 10px;
+  padding: 0 30px;
+  margin-bottom: 100px;
+}
+
+/* 1번과 4번 이미지는 가로로 가득 차게 설정 */
+.sec7-img1,
+.sec7-img4 {
+  grid-column: span 2;
+}
+
+/* 공통 링크 박스 설정 */
+.sec7 > a {
+  position: relative;
+  overflow: hidden; /* 영역 밖 글자 숨김 */
+}
+
+/* 이미지 스타일 */
+.sec7 > a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease; /* 호버 시 이미지 미세 확대 효과용 */
+}
+
+/* 글라스 카드 (기본 상태: 투명도 0 & 위로 이동) */
+.sec7 .glass-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 30px;
+  /* 기존 정의된 .glass-card 스타일을 덮어쓰거나 확장 */
+  opacity: 0;
+  z-index: 2;
+  border: none; /* 필요시 경계선 제거 */
+  border-radius: 0; /* 부모 a태그에서 처리하므로 0 */
+}
+
+/* 텍스트 스타일 */
+.glass-card h5 {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.glass-card p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* --- 호버 액션 --- */
+
+/* 1. 글라스 카드 내려오기 */
+.sec7 > a:hover .glass-card {
+  opacity: 1;
+}
+
+/* 2. 이미지 살짝 확대 (생동감 추가) */
+.sec7 > a:hover img {
+  transform: scale(1.05);
+}
+
+/* 3. 텍스트에 순차적 애니메이션 (디테일) */
+.glass-card h5,
+.glass-card p {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.4s ease 0.2s; /* 카드 내려온 후 0.2초 뒤 재생 */
+}
+
+.sec7 > a:hover .glass-card h5,
+.sec7 > a:hover .glass-card p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sec7 > a:hover .glass-card p {
+  transition-delay: 0.3s; /* 본문은 제목보다 조금 더 늦게 */
+}
+.sec8 {
+  padding: 0 30px;
+}
+.sec8-left {
+  margin-bottom: 50px;
+}
+.sec8-left h6 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.sec8-left h6 strong {
+  font-size: 36px;
+}
+.sec8-left p {
+  font-size: 13px;
+  line-height: 2;
+}
+.sec8-left p strong {
+  font-size: 15px;
+  font-weight: bold;
+}
+.sec8-right {
+  margin-bottom: 100px;
+}
+.sec8-right h6 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.s8-r-form fieldset {
+  border: none;
+  padding: 0;
+}
+
+/* 인풋 박스 1 (성함, 연락처, 지역) */
+.s8-r-f-box1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* 입력창 간격 */
+  margin-bottom: 30px;
+}
+
+.s8-r-f-box1 input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #333; /* 하단 라인만 표시 */
+  padding: 12px 5px;
+  font-size: 15px;
+  outline: none;
+  background: transparent;
+  transition: border-color 0.3s ease;
+}
+
+.s8-r-f-box1 input::placeholder {
+  color: #333; /* 이미지처럼 플레이스홀더를 진하게 설정 */
+  font-weight: 600;
+}
+
+.s8-r-f-box1 input:focus {
+  border-bottom: 2px solid #000;
+}
+
+/* 인풋 박스 2 (문의 내용) */
+.s8-r-f-box2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.s8-r-f-box2 label {
+  font-size: var(--font-size-l);
+  font-weight: 600;
+}
+
+.s8-r-f-box2 textarea {
+  width: 100%;
+  height: 180px; /* 이미지의 박스 크기 반영 */
+  border: 1px solid #999;
+  padding: 15px;
+  resize: none; /* 크기 조절 비활성화 */
+  outline: none;
+  font-size: 15px;
+}
+
+/* 제출 버튼 */
+.sec8-right button[type="submit"] {
+  border: 1px solid #333;
+  background: #fff;
+  padding: 8px 15px;
+  font-size: var(--font-size-s);
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.sec8-right button[type="submit"]:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* 동의 체크박스 영역 */
+.s8-r-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.s8-r-text input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  accent-color: #333; /* 체크박스 포인트 컬러 */
+  cursor: pointer;
+}
+
+.s8-r-text p {
+  font-size: var(--font-size-s);
+  color: #666;
+}
+footer {
+  position: relative;
+  font-size: 11px;
+}
+footer::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: url(../img/footerimg.png) no-repeat;
+  opacity: 0.3;
+  z-index: -1;
+}
+.footer-left {
+  display: flex;
+}
+.footer-left div {
+  width: 25%;
+  padding: 30px;
+}
+.footer-left div ul li:first-child {
+  font-weight: bold;
+}
+.footer-left div ul li a {
+  margin: 3px 0;
+}
+.footer-left div ul li a:hover {
+  text-decoration: underline;
+}
+.footer-right {
+  padding: 0 30px;
+  text-align: right;
+}
+.f-r-t-1 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+address {
+  font-style: normal;
+  padding-left: 140px;
+  margin-bottom: 5px;
+}
+.f-r-t-2 ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5px;
+}
+.f-r-t-2 ul li a::after {
+  content: "|";
+  padding: 0 10px;
+}
+.f-r-t-2 ul li:last-child a::after {
+  content: "";
+  padding: 0;
+}
+.f-r-t-2 ul li a:hover {
+  text-decoration: underline;
+}
+.f-r-icon ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.f-r-icon ul li {
+  padding: 10px 0 10px 10px;
+}
+.f-r-icon ul li a img {
+  width: 100%;
+  max-width: 100%;
+}
+/* 탭 ----------------------------------------------------------*/
+@media all and (min-width: 768px) {
+  /* 버튼 */
+.border-btn {
+  display: flex;
+  border: var(--border-1);
+  font-size: var(--font-size-m);
+  gap: var(--space-gap);
+  padding: var(--space-padding-x-m) var(--space-padding-y-m);
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+}
+
+.border-btn-w {
+  display: flex;
+  border: var(--border-2);
+  font-size: var(--font-size-m);
+  gap: var(--space-gap);
+  padding: var(--space-padding-x-m) var(--space-padding-y-m);
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+  color: #fff;
+}
+
+.text-btn {
+  display: flex;
+  font-size: var(--font-size-m);
+  gap: var(--space-gap);
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+}
+
+.text-btn-w {
+  display: flex;
+  color: #fff;
+  font-size: var(--font-size-l);
+  gap: var(--space-gap);
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+}
+
+
+  .m-menu-btn {
+    display: none;
+  }
+  header {
+    display: flex;
+    height: 60vh;
+  }
+  .header-logo {
+    margin-left: 0;
+  }
+  .header-left {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+    position: relative;
+    height: 100%;
+  }
+  .header-text1 {
+    position: relative;
+    z-index: 3;
+    width: 200px;
+  }
+  .h-t1-1{
+    font-size: 20px;
+  }
+  .h-t1-box {
+    transform: translateX(30px);
+    white-space: nowrap;
+  }
+  .h-t1-box p:first-child, .h-t1-box p:last-child{
+    font-size: 36px;
+  }
+  .header-right {
+    z-index: 1;
+    flex: 7;
+    height: 100%;
+  }
+  
+.header-slide, 
+  .h-slide {
+    height: 100% !important; /* 모바일의 388px 고정값을 덮어씌움 */
+    width: 100%;
+    margin: 0;
+  }
+
+  .h-slide li {
+    width: 100%;
+    height: 100%;
+  }
+
+  .h-slide li a {
+    width: 100%;
+    height: 100%;
+  }
+
+  .h-slide li a img {
+    width: 100%;
+    height: 100% !important; /* 60vh에 맞춤 */
+    object-fit: cover; /* 이미지가 찌그러지지 않고 꽉 채우도록 함 */
+  }
+  
+  /* [섹션1 전체] 좌우 Flex 배치 및 중앙 정렬 */
+  .sec1 {
+    display: flex;
+    align-items: center; /* 수직 중앙 정렬 */
+    gap: 40px; /* 좌우 박스 사이 간격 */
+  }
+  
+  /* [왼쪽 박스] 이미지 + 타이틀 + 텍스트1 */
+  .sec1-left {
+    flex: 1.2; /* 5:5 비율 중 왼쪽 차지 */
+    display: flex;
+    align-items: flex-start; /* 이미지와 텍스트 상단 맞춤 */
+    margin: 0; /* 모바일 마진 초기화 */
+    position: relative;
+    z-index: 1;
+  }
+  
+  .sec1-left img {
+    width: 211px; /* 이미지 크기 고정 (원하는 크기로 조정 가능) */
+    height: auto;
+  }
+  
+  .s1-l-text {
+    flex: 1.5; /* 남은 공간 차지 */
+    position: relative;
+    z-index: 2;
+  }
+  .s1-l-t-box{
+    position: relative;
+    z-index: 3;
+    white-space: nowrap;
+    }
+
+  .s1-l-text p {
+    padding: 0 50px 0 10px; /* 모바일 패딩 초기화 */
+    line-height: 1.6;
+  }
+
+  /* [오른쪽 박스] 텍스트2 + 버튼 + 이미지2 */
+  .sec1-right {
+    flex: 0.8; /* 5:5 비율 중 오른쪽 차지 */
+    float: none; /* 모바일 float 초기화 */
+    width: auto; /* 모바일 고정 너비 초기화 */
+    margin: 0; /* 모바일 마진 초기화 */
+    display: flex;
+    flex-direction: column; /* 세로 정렬 */
+    gap: 20px; /* 요소 간 간격 */
+    margin-top: 300px;
+  }
+
+  .sec1-right p {
+    font-size: var(--font-size-m);
+    line-height: 1.6;
+    margin-bottom: 0; /* gap으로 조절 */
+  }
+  .sec2{
+    margin-top: 100px;
+  }
+  .sec2-right h2{
+    font-weight: normal;
+    text-align: left;
+  }
+  .sec2-right p{
+    font-size: 16px;
+  }
+  .s2-l-menu li:last-child{
+    display: block;
+  }
+  .s2-l-m-t1{
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .sec3-left{
+    text-align: left;
+  }
+  .sec3-left h2{
+    font-weight: normal;
+    margin-bottom: 5px;
+  }
+  .sec3-left > p{
+    font-size: 20px;
+    width: 60%;
+  }
+  .s3-r-t1-1{
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .s3-r-t1-2{
+    font-size: 13px;
+    padding: 0;
+    width: 80%;
+  }
+  .tbox-1{
+    font-size: 16px;
+  }
+  .tbox-2{
+    font-size: 13px;
+  }
+  .sec4-text{
+    width: 40%;
+    height: 40%;
+  }
+  .sec4-text h3{
+    font-size: 32px;
+  }
+  .sec5{
+    display: flex;
+    z-index: 1;
+  }
+  .sec5-left{
+    position: relative;
+    z-index: 2;
+    width: 30%;
+    padding: 0 30px 0 10px;
+  }
+  .s5-l-box{
+    z-index: 3;
+    left: 20px;
+    white-space: nowrap;
+  }
+  .s5-l-box h3:first-child{
+    left: -20px;
+    font-size: 60px;
+  }
+  .s5-l-box h3:last-child{
+    font-size: 60px;
+  }
+  .s5-l-t1{
+    font-size: 16px;
+  }
+  .s6-l-text h4{
+    font-size: 16px;
+  }
+  .s6-l-text p{
+    width: 50%;
+  }
+  .sec6-right{
+    width: 60%;
+  }
+  .glass-card h5{
+    font-size: 16px;
+  }
+  .sec8{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 100px;
+  }
+  .sec8-left{
+    flex: 1;
+    margin-bottom: 0;
+  }
+  .sec8-left p{
+    font-size: 16px;
+    line-height: 2.5;
+  }
+  .sec8-left p strong{
+    font-size: 20px;
+  }
+  .sec8-right{
+    flex: 1;
+    margin-bottom: 0;
+  }
+  .sec8-right h6{
+    font-size: 40px;
+  }
+  footer{
+    display: flex;
+    padding: 30px;
+  }
+  .footer-left{
+    flex: 2;
+  }
+  .footer-left div{
+    padding: 0;
+  }
+  .footer-left div ul li{
+    font-size: 15px;
+  }
+  .footer-left div ul li a{
+    font-size: 13px;
+    margin: 10px 0;
+  }
+  .footer-right{
+    flex: 1;
+    padding: 0;
+    font-size: 12px;
+  }
+  .f-r-t-1{
+    font-size: 20px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+  }
+  address{
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  .f-r-t-2 ul{
+    margin-bottom: 10px;
+  }
+}
+
+/* 피씨 --------------------------------------------------------*/
+@media all and (min-width: 1024px) {
+    body {
+    background: chocolate;
+  }
+
+    /* 버튼 */
+.border-btn {
+  display: flex;
+  border: var(--border-1);
+  font-size: var(--font-size-l);
+  gap: var(--space-gap);
+  padding: var(--space-padding-x-l) var(--space-padding-y-l);
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+}
+
+.border-btn-w {
+  display: flex;
+  border: var(--border-2);
+  font-size: var(--font-size-l);
+  gap: var(--space-gap);
+  padding: var(--space-padding-x-l) var(--space-padding-y-l);
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+  color: #fff;
+}
+
+.text-btn {
+  display: flex;
+  font-size: var(--font-size-l);
+  gap: var(--space-gap);
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+}
+
+.text-btn-w {
+  display: flex;
+  color: #fff;
+  font-size: var(--font-size-l);
+  gap: var(--space-gap);
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+}
+header{
+  height: 80vh;
+}
+.header-left{
+  flex: 2;
+}
+.header-text1{
+  width: 450px;
+}
+  .h-t1-1{
+    font-size: 36px;
+  }
+  .h-t1-box{
+    transform: translateX(80px);
+    margin-top: 30px;
+  }
+  .h-t1-box p:first-child{
+    left: -30px;
+    top: -30px;
+    color: #555;
+  }
+  .h-t1-box p:first-child strong{
+    color: #555;
+  }
+  .h-t1-box p:first-child, .h-t1-box p:last-child{
+    font-size: 60px
+  }
+  .h-t1-box p:first-child strong, .h-t1-box p:last-child strong{
+    font-size: 64px;
+  }
+  .h-t2-1{
+    font-size: 20px;
+    margin : 70px 0;
+  }
+  .header-menu{
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    width: 840px;
+    height: 50px;
+  }
+  .h-gnb{
+    width: 840px;
+    height: 50px;
+    display: flex;
+  }
+  .h-gnb>li>a{
+    width: 140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    padding: 0;
+    color: #fff;
+  }
+  .h-gnb>li:hover{
+    scale: calc(1.3);
+  }
+  .h-sub li a{
+    width: 140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+  }
+  .h-sub li a:hover{
+    text-decoration: underline;
+    scale: calc(1.2);
+  }
+}

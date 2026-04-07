@@ -1,0 +1,640 @@
+.header-left{
+  width: 100%;
+  background: var(--background-1);
+  padding: 5.128205128205128%;
+}
+.h-l-box{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15%;
+}
+.header-logo{
+  margin: auto;
+}
+.header-logo h1 a img{
+  width: 100%;
+  max-width: 100%;
+}
+.header-text1{}
+.h-t1-1{
+  font-size: 6.153846153846154vw;
+  color: #fff;
+}
+.h-t1-box{
+  position: relative;
+  margin-bottom: 10%;
+}
+.h-t1-box p:first-child{
+  position: relative;
+  z-index: 2;
+  color: rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+  font-size: 8.205128205128205vw;
+}
+.h-t1-box p:last-child{
+  position: absolute;
+  z-index: 3;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 8.205128205128205vw;
+  top: 10%;
+  left: 3%;
+}
+.h-t1-box p:first-child strong{
+  font-size: 10.25641025641026vw;
+  color: rgba(0, 0, 0, 0.3);
+}
+.h-t1-box p:last-child strong{
+  font-size: 10.25641025641026vw;
+  color: #fff;
+}
+.header-text2{}
+.h-t2-1{
+  font-size: 5.128205128205128vw;
+  color: #fff;
+  margin-bottom: 10%;
+}
+.h-t2-2{
+  margin-bottom: 10%;
+}
+.header-right{margin-bottom: 10%;}
+.header-slide{}
+.h-slide{
+  display: grid;
+}
+.h-slide li{
+  grid-area: 1/1;
+}
+.h-slide li a{}
+.h-slide li a img{
+  width: 100%;
+  max-width: 100%;
+}
+.header-menu{
+  display: none;
+}
+main{}
+/* 실외정원-모바일------------------- */
+.sec1{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.sec1-left{
+  display: flex;
+}
+.sec1-left img{
+  width: 38.46153846153846%;
+  max-width: 100%;
+  height: auto;
+}
+.s1-l-text{}
+.s1-l-t-box{
+  position: relative;
+  z-index: 1;
+}
+.s1-l-t-box h2{
+  position: relative;
+  z-index: 2;
+  white-space: nowrap;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 16.41025641025641vw;
+  transform: translateX(-10%);
+  font-weight: normal;
+}
+.s1-l-t-box h2:last-child{
+  position: absolute;
+  z-index: 3;
+  white-space: nowrap;
+  top: 10%;
+  left: 5%;
+  color: #333;
+}
+.s1-l-text p{
+  font-size: 3.333333333333333vw;
+  padding: 5.128205128205128%;
+}
+.sec1-right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 10%;
+}
+.s1-r-text{
+  width: 58.5%;
+}
+.s1-r-text p{
+  font-size: 3.333333333333333vw;
+  padding: 5.128205128205128% 0;
+}
+.sec1-right img{
+  width: 58.5%;
+  max-width: 100%;
+}
+/* 동양풍정원-모바일-------------- */
+.sec2{
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0 5.128205128205128%;
+  margin-bottom: 10%;
+}
+.sec2-left{}
+.s2-l-menu{
+  display: flex;
+  gap: 3.846153846153846%;
+}
+.s2-l-menu li{}
+.s2-l-menu li:last-child{
+  display: none;
+}
+.s2-l-menu li a{}
+.s2-l-menu li a figure{}
+.s2-l-menu li a figure img{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 3.846153846153846%;
+}
+.s2-l-menu li a figure figcaption{}
+.s2-l-m-t1{
+  font-size: 3.846153846153846vw;
+  font-weight: bold;
+}
+.s2-l-m-t2{
+  font-size: 2.820512820512821vw;
+}
+.sec2-right{}
+.sec2-right h2{
+  font-size: 16.41025641025641vw;
+  text-align: center;
+  font-weight: normal;
+}
+.sec2-right p{
+  font-size: 5.128205128205128vw;
+  margin: 10% 0;
+}
+.s2-l-menu li a:hover figure img{
+  scale: calc(1.05);
+  transition: all 0.5s;
+}
+.s2-l-menu li a:hover figure figcaption{
+  text-decoration: underline;
+}
+/* 옥상정원-모바일----------- */
+.sec3{
+  display: flex;
+  flex-direction: column;
+}
+.sec3-left{
+  padding: 5.128205128205128%;
+  order: 1;
+}
+.sec3-left h2{
+  font-size: 16.41025641025641vw;
+  text-align: center;
+  margin-bottom: 10%;
+  font-weight: normal;
+}
+.sec3-left p{
+  font-size: 5.128205128205128vw;
+}
+.sec3-midle{
+  order: 3;
+  display: flex;
+  align-items: center;
+  gap: 3.846153846153846%;
+  margin-bottom: 10%;
+}
+.sec3-midle img{
+  width: 36.41025641025641%;
+  max-width: 100%;
+  height: auto;
+}
+.s3-m-tbox{
+  padding-right: 5.128205128205128%;
+}
+.tbox-1{
+  font-size: 5.128205128205128vw;
+}
+.tbox-2{
+  font-size: 3.333333333333333vw;
+  margin: 3.846153846153846% 0;
+}
+.tbox-3{}
+.sec3-right{
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 10%;
+}
+.sec3-right img{
+  width: 82.05128205128205%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 3.846153846153846%;
+}
+.s3-r-text{
+  width: 82.05128205128205%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 5.128205128205128%;
+}
+.s3-r-t-1{}
+.s3-r-t1-1{
+  font-size: 5.128205128205128vw;
+  margin-bottom: 3.846153846153846%;
+}
+.s3-r-t1-2{
+  font-size: 3.333333333333333vw;
+  margin-bottom: 3.846153846153846%;
+}
+.s3-r-t-2{}
+/* 커뮤니티정원-모바일---------- */
+.sec4 {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10%;
+}
+.sec4-bg img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  background: cover;
+  transition: transform 0.6s ease;
+}
+.sec4-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 51.28205128205128%;
+  height: 50%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+.sec4-text h3 {
+  font-size: 5.128205128205128vw;
+  text-align: center;
+  margin-top: 10%;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-weight: normal;
+}
+.sec4-text a {
+  margin: 10% auto;
+}
+/* 호버 시 동작 */
+.sec4:hover .sec4-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sec4:hover .sec4-bg img {
+  transform: scale(1.1); /* 배경 이미지 살짝 확대 */
+}
+/* 서양풍정원-모바일--------- */
+.sec5{
+  padding: 0 5.128205128205128%;
+  margin-bottom: 10%;
+}
+.sec5-left{}
+.s5-l-box{
+  position: relative;
+  margin-bottom: 10%;
+}
+.s5-l-box h3{
+  position: relative;
+  font-size: 16.41025641025641vw;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: normal;
+}
+.s5-l-box h3:last-child{
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  color: #333;
+}
+.s5-l-t1{
+  font-size: 5.128205128205128vw;
+  font-weight: bold;
+}
+.s5-l-t2{
+  font-size: 3.333333333333333vw;
+  margin: 10% 0;
+}
+.s5-l-t3{
+  margin-bottom: 10%;
+}
+.sec5-right{}
+.sec5-right ul{
+  display: flex;
+  gap: 3.846153846153846%;
+  margin-bottom: 3.846153846153846%;
+}
+.sec5-right ul li{}
+.sec5-right ul li:last-child{
+  display: none;
+}
+.sec5-right ul li a{}
+.sec5-right ul li a img{
+  width: 100%;
+  max-width: 100%;
+}
+.s5-r-text{
+  display: flex;
+  gap: 3.846153846153846%;
+  align-items: center;
+}
+.s5-r-text p{}
+/* 잡목가든-모바일------- */
+.sec6{
+  margin-bottom: 10%;
+}
+.sec6-left{
+  display: flex;
+  align-items: center;
+  gap: 3.846153846153846%;
+  margin-bottom: 10%;
+}
+.sec6-left img{
+  width: 44.87179487179487%;
+  max-width: 100%;
+  height: auto;
+}
+.s6-l-text{}
+.s6-l-text h4{
+  font-size: 5.128205128205128vw;
+}
+.s6-l-text p{
+  font-size: 3.333333333333333vw;
+  margin: 3.846153846153846% 0;
+}
+.sec6-right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 5.128205128205128%;
+}
+.sec6-right img{
+  width: 61.28205128205128%;
+  max-width: 100%;
+  height: auto;
+}
+.sec6-right p{
+  width: 61.28205128205128%;
+  padding-right: 5.128205128205128%;
+  font-size: 3.333333333333333vw;
+  margin: 3.846153846153846% 0;
+}
+/* 시공완성 모습-모바일-------- */
+.sec7 {
+  clear: both;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2열 구조 */
+  gap: 2.564102564102564%;
+  padding: 0 5.128205128205128%;
+  margin-bottom: 10%;
+}
+
+/* 1번과 4번 이미지는 가로로 가득 차게 설정 */
+.sec7-img1,
+.sec7-img4 {
+  grid-column: span 2;
+}
+
+/* 공통 링크 박스 설정 */
+.sec7 > a {
+  position: relative;
+  overflow: hidden; /* 영역 밖 글자 숨김 */
+}
+
+/* 이미지 스타일 */
+.sec7 > a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease; /* 호버 시 이미지 미세 확대 효과용 */
+}
+
+/* 글라스 카드 (기본 상태: 투명도 0 & 위로 이동) */
+.sec7 .glass-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 5.128205128205128%;
+  /* 기존 정의된 .glass-card 스타일을 덮어쓰거나 확장 */
+  opacity: 0;
+  z-index: 2;
+  border: none; /* 필요시 경계선 제거 */
+  border-radius: 0; /* 부모 a태그에서 처리하므로 0 */
+}
+
+/* 텍스트 스타일 */
+.glass-card h5 {
+  color: #fff;
+  font-size: 3.846153846153846vw;
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+
+.glass-card p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 2.820512820512821vw;
+  line-height: 1.5;
+}
+
+/* --- 호버 액션 --- */
+
+/* 1. 글라스 카드 내려오기 */
+.sec7 > a:hover .glass-card {
+  opacity: 1;
+}
+
+/* 2. 이미지 살짝 확대 (생동감 추가) */
+.sec7 > a:hover img {
+  transform: scale(1.05);
+}
+
+/* 3. 텍스트에 순차적 애니메이션 (디테일) */
+.glass-card h5,
+.glass-card p {
+  opacity: 0;
+  transform: translateY(-1.2vw);
+  transition: all 0.4s ease 0.3s; /* 카드 내려온 후 0.2초 뒤 재생 */
+}
+
+.sec7 > a:hover .glass-card h5,
+.sec7 > a:hover .glass-card p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sec7 > a:hover .glass-card p {
+  transition-delay: 0.5s; /* 본문은 제목보다 조금 더 늦게 */
+}
+/* 컨설팅 신청-모바일----------- */
+.sec8 {
+  padding: 0 5.128205128205128%;
+}
+.sec8-left {
+  margin-bottom: 10%;
+}
+.sec8-left h6 {
+  font-size: 6.153846153846154vw;
+  margin-bottom: 10%;
+}
+.sec8-left h6 strong {
+  font-size: 9.230769230769231vw;
+}
+.sec8-left p {
+  font-size: 3.333333333333333vw;
+  line-height: 2.5;
+}
+.sec8-left p strong {
+  font-size: 3.846153846153846vw;
+}
+.sec8-right {}
+.sec8-right h6 {
+  font-size: 9.230769230769231vw;
+  margin-bottom: 10%;
+}
+.s8-r-form fieldset {
+  border: none;
+  padding: 0;
+}
+/* 인풋 박스 1 (성함, 연락처, 지역) */
+.s8-r-f-box1 {
+  display: flex;
+  flex-direction: column;
+  gap: 5.128205128205128%; /* 입력창 간격 */
+  margin-bottom: 10%;
+}
+.s8-r-f-box1 input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #333; /* 하단 라인만 표시 */
+  padding: 2%;
+  font-size: 3.846153846153846vw;
+  outline: none;
+  background: transparent;
+  transition: border-color 0.5s ease;
+}
+.s8-r-f-box1 input::placeholder {
+  color: #333; /* 이미지처럼 플레이스홀더를 진하게 설정 */
+  font-weight: bold;
+}
+.s8-r-f-box1 input:focus {
+  border-bottom: 1px solid #000;
+}
+/* 인풋 박스 2 (문의 내용) */
+.s8-r-f-box2 {
+  display: flex;
+  flex-direction: column;
+  gap: 5.128205128205128%;
+  margin-bottom: 2%;
+  font-size: 3.846153846153846vw;
+  font-weight: bold;
+  text-indent: 2%;
+}
+.s8-r-f-box2 textarea {
+  width: 100%;
+  height: 30vw; /* 이미지의 박스 크기 반영 */
+  border: 1px solid #333;
+  padding: 2%;
+  resize: none; /* 크기 조절 비활성화 */
+  outline: none;
+  font-size: 3.846153846153846vw;
+}
+/* 제출 버튼 */
+.sec8-right button[type="submit"] {
+  border: 1px solid #333;
+  background: #fff;
+  padding: 1% 2%;
+  font-size: 2.820512820512821vw;
+  cursor: pointer;
+  margin-bottom: 1%;
+  transition: all 0.5s ease;
+}
+
+.sec8-right button[type="submit"]:hover {
+  background: #333;
+  color: #fff;
+}
+/* 동의 체크박스 영역 */
+.s8-r-text {
+  display: flex;
+  align-items: center;
+  gap: 1.282051282051282%;
+}
+
+.s8-r-text input[type="checkbox"] {
+  width: 2.820512820512821vw;
+  height: 2.820512820512821vw;
+  accent-color: #333; /* 체크박스 포인트 컬러 */
+  cursor: pointer;
+}
+
+.s8-r-text p {
+  font-size: 2.820512820512821vw;
+  color: #666;
+}
+footer{
+  position: relative;
+}
+footer::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 80vw;
+  background: url(../img/footerimg.jpg) no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  z-index: -1;
+  background-position: center bottom;
+}
+.footer-left{
+  display: flex;
+  justify-content: center;
+}
+.footer-left div{
+  width: 25%;
+}
+.footer-left div ul li:first-child{
+  font-weight: bold;
+}
+.footer-right{
+  text-align: right;
+  width: 50%;
+  margin-left: 50%;
+}
+.f-r-t-2 ul{
+  display: flex;
+  justify-content: flex-end;
+}
+.f-r-icon ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.f-r-icon ul li a img{
+  width: 100%;
+  max-width: 100%;
+}
+
+@media all and (min-width: 768px){
+  body{background-color: aqua;}
+}

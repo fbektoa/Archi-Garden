@@ -1,45 +1,3 @@
-/* 버튼 */
-.border-btn {
-  display: flex;
-  border: var(--border-1);
-  font-size: var(--font-size-s);
-  gap: var(--space-gap);
-  padding: var(--space-padding-x-s) var(--space-padding-y-s);
-  align-items: center;
-  justify-content: flex-start;
-  width: fit-content;
-}
-
-.border-btn-w {
-  display: flex;
-  border: var(--border-2);
-  font-size: var(--font-size-s);
-  gap: var(--space-gap);
-  padding: var(--space-padding-x-s) var(--space-padding-y-s);
-  align-items: center;
-  justify-content: flex-start;
-  width: fit-content;
-  color: #fff;
-}
-
-.text-btn {
-  display: flex;
-  font-size: var(--font-size-s);
-  gap: var(--space-gap);
-  align-items: center;
-  justify-content: flex-start;
-  width: fit-content;
-}
-
-.text-btn-w {
-  display: flex;
-  color: #fff;
-  font-size: var(--font-size-s);
-  gap: var(--space-gap);
-  align-items: center;
-  justify-content: flex-start;
-  width: fit-content;
-}
 header {
   background: var(--background-1);
 }
@@ -1214,8 +1172,4 @@ address {
     justify-content: flex-start;
     width: fit-content;
   }
-.h-t1-box{
-  height: clamp(9.375rem, 12.5rem,);
-}
-
 }
